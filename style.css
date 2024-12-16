@@ -91,3 +91,45 @@ section {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+#peta {
+    background-color: #020838; /* Light background for the section */
+    padding: 20px 0; /* Padding for top and bottom */
+}
+
+#peta h2 {
+    color: #333;
+}
+
+#peta p {
+    color: #555;
+}
+
+.bg-light {
+    background-color: #ffffff; /* White background for the image container */
+}
+
+.bg-secondary {
+    background-color: #6c757d; /* Dark gray for flood scale */
+}
+
+h5 {
+    color: #fff; /* White color for the heading */
+}
+
+.img-fluid {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.rounded {
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.text-white {
+    color: #ffffff; /* Ensure text is white in the secondary background */
+}
+
+.list-unstyled {
+    padding-left: 0; /* Remove default padding */
+}
