@@ -11,14 +11,15 @@ body {
 }
 
 .jumbotron {
-    background: url("https://wallpaperaccess.com/full/6381544.jpg") no-repeat center center;
+    background: url("https://www.solomediabisnis.com/wp-content/uploads/2023/11/large-alun-alun-pati-5daacaa611dbe7d107de2dff7053b390.jpg") no-repeat center center;
     background-size: cover; /* Cover the entire jumbotron */
-    height: 100vh; /* Set height to full viewport height */
+    height: 80vh; /* Set height to full viewport height */
     color: #fff;
     display: flex; /* Use flexbox for centering content */
     flex-direction: column; /* Stack children vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
+    align-content: center;
     padding: 0; /* Remove padding for full height */
 }
 
@@ -57,100 +58,6 @@ body {
 section {
     padding-top: 10rem;
     padding-bottom: 10rem; /* Menambah jarak di bawah setiap section */
-}
-
-/***** Footer *****/
-
-.footer-top {
-    padding: 60px 0;
-    background: #030c59;
-    text-align: left;
-    color: #aaa;
-}
-
-.footer-top h3 {
-    padding-bottom: 10px;
-    color: #fff;
-}
-
-.footer-about img.logo-footer {
-    max-width: 74px;
-    margin-top: 0;
-    margin-bottom: 18px;
-}
-
-.footer-about p a {
-    color: #aaa;
-    border-bottom: 1px dashed #666;
-}
-
-.footer-about p a:hover,
-.footer-about p a:focus {
-    color: #fff;
-    border-color: #aaa;
-}
-
-.footer-contact p {
-    word-wrap: break-word;
-}
-
-.footer-contact i {
-    padding-right: 10px;
-    font-size: 18px;
-    color: #666;
-}
-
-.footer-contact p a {
-    color: #aaa;
-    border-bottom: 1px dashed #666;
-}
-
-.footer-contact p a:hover,
-.footer-contact p a:focus {
-    color: #fff;
-    border-color: #aaa;
-}
-
-.footer-social a {
-    display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 8px;
-    color: #777;
-    border: 0;
-}
-
-.footer-social a:hover,
-.footer-social a:focus {
-    color: #aaa;
-    border: 0;
-}
-
-.footer-social i {
-    font-size: 24px;
-    vertical-align: middle;
-}
-
-.footer-bottom {
-    padding: 15px 0;
-    background: #444;
-    text-align: left;
-    color: #aaa;
-}
-
-.footer-copyright p {
-    margin: 0;
-    padding: 0.5rem 0;
-}
-
-.footer-copyright a {
-    color: #fff;
-    border: 0;
-}
-
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-    color: #aaa;
-    border: 0;
 }
 
 /* footer navbar */

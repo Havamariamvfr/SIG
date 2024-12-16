@@ -13,8 +13,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #030c59">
         <div class="container">
           <a class="navbar-brand" href="#home">
-            <img src="img/chooseisp-removebg-preview.png" alt="NYOBA SIG" height="30" />
-            SIG
+            <img src="img/logo_pafloz_fix.png" alt="NYOBA SIG" height="80" />
+            SIG Pati Flood Zone
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,6 +30,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about">Team</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="osm.html">Openstreetmap</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -38,188 +41,191 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-        <h1 class="display-4">PEMETAAN RUMAH SAKIT</h1>
-        <p class="lead">Di Kota Semarang</p>
-      </section>
+      <h1 class="display-4" style="font-size: 4rem; font-weight: bold;">Selamat Datang di PAFLOZ</h1>
+      <p class="lead">Tetap terupdate dengan informasi terkini seputar banjir di Kota Pati</p>
+    </section>
       <!-- Akhir Jumbotron -->
 
-      <section id="peta">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Peta</h2>
+      <!-- section deskripsi -->
+      <section id="deskripsi">
+        <div class="container">
+          <h2>Deskripsi</h2>
+          <div class="row">
+            <div class="col-md-6">
+          <p>Kabupaten Pati, yang dikenal sebagai "Kota Bumi Mina Tani", merupakan sebuah wilayah di Provinsi Jawa Tengah yang memiliki kekayaan alam, budaya, dan sejarah yang menarik.
+            Terletak di pantai utara Pulau Jawa, Kabupaten Pati memiliki posisi strategis yang menjadikannya sebagai salah satu daerah penting di Jawa Tengah, baik dari segi ekonomi,
+            pariwisata, maupun pertanian.</p>
+          </div>
+          <div class="col-md-6">
+              <div class="bg-light rounded" style="height: 300px;">
+                  <img src="img/tugu kota pati.jpg" alt="Deskripsi Image" class="img-fluid rounded" style="height: 150; width: 150;">
+              </div>
+          </div>
           </div>
         </div>
-        <div id="map"></div>
+      </section>
+      <!-- akhir section deskripsi -->
+
+      <section id="peta" class="my-5">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>Daerah Rawan Banjir</h2>
+                    <p>Pelajari wilayah di Kota Pati yang rentan terhadap banjir</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="bg-light rounded p-3">
+                        <img src="img/qgis nyoba.jpg" alt="Peta" class="img-fluid"> <!-- Replace with your image path -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-secondary text-white rounded p-3">
+                        <h5>Skala Banjir</h5>
+                        <ul class="list-unstyled">
+                            <li>Flood Alert (Orange)</li>
+                            <li>Flood Monitoring (Yellow)</li>
+                            <li>Flood Warning (Red)</li>
+                            <li>Severe Flood (Purple)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
       </section>
 
          <!-- Team -->
-    <section id="about">
-        <div class="container">
-          <div class="row text-center mb-3">
-            <div class="col">
-              <h2>Team</h2>
-            </div>
+         <section id="about">
+          <div class="container text-center">
+              <div class="row mb-3">
+                  <div class="col">
+                      <h2>Team</h2>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        
+                  <!-- Anggota Team 1-->
+                  <div class="col-6 col-sm-4 col-md-2 mb-5 d-flex justify-content-center">
+                      <div class="bg-white rounded shadow-sm py-5 px-4 text-center" style="height: 300px;">
+                          <img src="img/about/abt1.jpg" alt="Nisa" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
+                          <h5 class="mb-0">Solihatun Khoirunnisa</h5>
+                          <span class="small text-uppercase text-muted">...</span>
+                          <ul class="social mb-0 list-inline mt-3">
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- End -->
+                  <!-- Anggota Team 2-->
+                  <div class="col-6 col-sm-4 col-md-2 mb-5 d-flex justify-content-center">
+                      <div class="bg-white rounded shadow-sm py-5 px-4 text-center" style="height: 300px;">
+                          <img src="img/about/abt2.jpg" alt="Fahran" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
+                          <h5 class="mb-0">M Fahran</h5>
+                          <span class="small text-uppercase text-muted">...</span>
+                          <ul class="social mb-0 list-inline mt-3">
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- End -->
+        
+                  <!-- Anggota Team 3 -->
+                  <div class="col-6 col-sm-4 col-md-2 mb-5 d-flex justify-content-center">
+                      <div class="bg-white rounded shadow-sm py-5 px-4 text-center" style="height: 300px;">
+                          <img src="img/about/abt3.jpg" alt="Michael" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
+                          <h5 class="mb-0">Michael Ryan</h5>
+                          <span class="small text-uppercase text-muted">...</span>
+                          <ul class="social mb-0 list-inline mt-3">
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- End -->
+        
+                  <!-- Anggota Team 4 -->
+                  <div class="col-6 col-sm-4 col-md-2 mb-5 d-flex justify-content-center">
+                      <div class="bg-white rounded shadow-sm py-5 px-4 text-center" style="height: 300px;">
+                          <img src="img/about/abt4.jpg" alt="Ichi" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
+                          <h5 class="mb-0">Ichrima Aura</h5>
+                          <span class="small text-uppercase text-muted">...</span>
+                          <ul class="social mb-0 list-inline mt-3">
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- End -->
+        
+                  <!-- Anggota Team 5 -->
+                  <div class="col-6 col-sm-4 col-md-2 mb-5 d-flex justify-content-center">
+                      <div class="bg-white rounded shadow-sm py-5 px-4 text-center" style="height: 300px;">
+                          <img src="img/about/abt5.jpg" alt="Hava" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
+                          <h5 class="mb-0">Hava Maria</h5>
+                          <span class="small text-uppercase text-muted">...</span>
+                          <ul class="social mb-0 list-inline mt-3">
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- End -->
+              </div>
           </div>
-          <div class="row">
-            <div class="row text-center">
-              <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-              <!-- Anggota Team 1-->
-              <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4">
-                  <img src="img/about/abt1.jpg" alt="Nisa" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
-                  <h5 class="mb-0">Solihatun Khoirunnisa</h5>
-                  <span class="small text-uppercase text-muted">...</span>
-                  <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item">
-                      <a href="https://www.facebook.com/" class="social-link"><i class="fa fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://twitter.com/" class="social-link"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/" class="social-link"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/" class="social-link"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- End-->
   
-              <!-- Anggota Team 2-->
-              <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4">
-                  <img src="img/about/abt2.jpg" alt="Fahran" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
-                  <h5 class="mb-0">M Fahran</h5>
-                  <span class="small text-uppercase text-muted">...</span>
-                  <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item">
-                      <a href="https://www.facebook.com/" class="social-link"><i class="fa fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://twitter.com/" class="social-link"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/" class="social-link"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/" class="social-link"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- End-->
-  
-              <!-- Anggota Team 3-->
-              <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4">
-                  <img src="img/about/abt3.jpg" alt="Michael" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
-                  <h5 class="mb-0">Michael Ryan</h5>
-                  <span class="small text-uppercase text-muted">...</span>
-                  <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item">
-                      <a href="https://www.facebook.com/" class="social-link"><i class="fa fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://twitter.com/" class="social-link"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/" class="social-link"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/" class="social-link"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- End-->
-  
-              <!-- Anggota Team 4-->
-              <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4">
-                  <img src="img/about/abt4.jpg" alt="Ichi" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
-                  <h5 class="mb-0">Ichrima Aura</h5>
-                  <span class="small text-uppercase text-muted">...</span>
-                  <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item">
-                      <a href="https://www.facebook.com/" class="social-link"><i class="fa fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://twitter.com/" class="social-link"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/" class="social-link"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/" class="social-link"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- End-->
-
-              <!-- Anggota Team 4-->
-              <div class="col-xl-3 col-sm-6 mb-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4">
-                  <img src="img/about/abt4.jpg" alt="Hava" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
-                  <h5 class="mb-0">Hava Maria</h5>
-                  <span class="small text-uppercase text-muted">...</span>
-                  <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item">
-                      <a href="https://www.facebook.com/" class="social-link"><i class="fa fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://twitter.com/" class="social-link"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.instagram.com/" class="social-link"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/" class="social-link"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- End-->
-            </div>
-          </div>
-        </div>
-  
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#ffffff"
             fill-opacity="1"
             d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,144C672,107,768,85,864,106.7C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
-        </svg>
+        </svg> -->
       </section>
-      <!-- Akhir About Us -->
+      <!-- Akhir Team -->
+
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
     crossorigin=""></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
- <!-- Footer -->
- <footer>
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-lg-4 footer-about wow fadeInUp">
-            <img class="logo-footer" src="img/chooseisp-removebg-preview.png" alt="logo-footer" data-at2x="assets/img/logo.png" />
-            <p>We are a young company that is always looking for new and creative ideas to help you make decisions using the methods we provide.</p>
-          </div>
-          <div class="col-md-4 col-lg-4 offset-lg-1 footer-contact wow fadeInDown">
-            <h3>Contact</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Jalan Sesama No. 4, Indonesia</p>
-            <p><i class="#"></i> Phone: (0812) 345 678 910</p>
-            <p><i class="#"></i> Email: <a href="#">chooseisp@gmail.com</a></p>
-          </div>
-          <div class="col-md-4 col-lg-3 footer-social wow fadeInUp">
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+ 
 </html>
