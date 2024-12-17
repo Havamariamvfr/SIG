@@ -1,135 +1,170 @@
-#map {
-    height: 450px; /* Tinggi peta */
-    width: 750px; /* Lebar peta */
-    margin: 100px auto; /* Menjadikan elemen berada di tengah secara horizontal dan menambah jarak vertikal */
-    border: 2px solid #ddd; /* Tambahkan border opsional untuk mempertegas area peta */
-    border-radius: 8px; /* Opsional, membuat sudut peta sedikit melengkung */
-}
-
 body {
-    min-height: 2000px;
+  min-height: 2000px;
+  background-color: #e2edff;
 }
 
 .jumbotron {
-    background: url("https://www.solomediabisnis.com/wp-content/uploads/2023/11/large-alun-alun-pati-5daacaa611dbe7d107de2dff7053b390.jpg") no-repeat center center;
-    background-size: cover; /* Cover the entire jumbotron */
-    height: 80vh; /* Set height to full viewport height */
-    color: #fff;
-    display: flex; /* Use flexbox for centering content */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    align-content: center;
-    padding: 0; /* Remove padding for full height */
-}
-
-#about {
-    background-color: #e2edff;
+  background: url("https://www.solomediabisnis.com/wp-content/uploads/2023/11/large-alun-alun-pati-5daacaa611dbe7d107de2dff7053b390.jpg") no-repeat center center;
+  background-size: cover; /* Cover the entire jumbotron */
+  height: 50vh; /* Set height to full viewport height */
+  color: #fff;
+  display: flex; /* Use flexbox for centering content */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  align-content: center;
+  padding: 0; /* Remove padding for full height */
 }
 
 .img-thumbnail {
-    width: 250px;
-}
-
-.project-title {
-    display: inline-block;
-    background-color: #030c59;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+  width: 250px;
 }
 
 .social-link {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    border-radius: 50%;
-    transition: all 0.3s;
-    font-size: 0.9rem;
-}
-
-section {
-    padding-top: 10rem;
-    padding-bottom: 10rem; /* Menambah jarak di bawah setiap section */
-}
-
-/* footer navbar */
-.navbar {
-    padding: 0;
-    background: #444;
-    backface-visibility: hidden;
-}
-
-.navbar-dark .navbar-nav {
-    font-size: 15px;
-    color: #fff;
-    font-weight: 400;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-    border: 0;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #aaa;
-}
-
-.navbar-dark .navbar-nav .nav-link:focus {
-    color: #aaa;
-    outline: 0;
-}
-
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
 }
 
 #peta {
-    background-color: #020838; /* Light background for the section */
-    padding: 20px 0; /* Padding for top and bottom */
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  background-color: #020338;
+  height: 50vh;
 }
 
-#peta h2 {
-    color: #333;
+/* navbar */
+.navbar {
+  padding: 0;
+  background: #444;
+  backface-visibility: hidden;
 }
 
-#peta p {
-    color: #555;
+.navbar-dark .navbar-nav {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
 }
 
-.bg-light {
-    background-color: #ffffff; /* White background for the image container */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  border: 0;
 }
 
-.bg-secondary {
-    background-color: #6c757d; /* Dark gray for flood scale */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #aaa;
 }
 
-h5 {
-    color: #fff; /* White color for the heading */
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #aaa;
+  outline: 0;
 }
 
-.img-fluid {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.rounded {
-    border-radius: 0.5rem; /* Rounded corners */
+/* Style page osm */
+.map-page {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #D9EAFD;
+  padding-top: 100px; /* Adjust for fixed navbar height */
 }
 
-.text-white {
-    color: #ffffff; /* Ensure text is white in the secondary background */
+.map-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 150px;
 }
 
-.list-unstyled {
-    padding-left: 0; /* Remove default padding */
+/* Map Container */
+#main-map {
+  width: 800px;
+  height: 450px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Buttons di pojok kanan atas */
+.map-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.map-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.map-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Buttons Tempat Wisata */
+.tourist-location-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tourist-location-buttons button {
+  background-color: #020338;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tourist-location-buttons button:hover {
+  background-color: #D9EAFD;
+}
+
+
+#deskripsi .row {
+    margin: 20px 0; /* Atur jarak antara baris */
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#deskripsi h2 {
+    max-width: 600px; /* lebar judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+#deskripsi p {
+    max-width: 600px; /* lebar paragraf */
+}
+
+#team{
+    padding-top: 200px;
 }

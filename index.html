@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
     crossorigin=""/>
-    <link rel="stylesheet" href="style.css" type="text/css"><!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
     <!-- Navbar -->
@@ -28,7 +28,7 @@
                 <a class="nav-link" href="#peta">Peta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">Team</a>
+                <a class="nav-link" href="#team">Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="osm.html">Openstreetmap</a>
@@ -45,73 +45,63 @@
       <p class="lead">Tetap terupdate dengan informasi terkini seputar banjir di Kota Pati</p>
     </section>
       <!-- Akhir Jumbotron -->
-
-      <!-- section deskripsi -->
-      <section id="deskripsi">
-        <div class="container">
-          <h2>Deskripsi</h2>
-          <div class="row">
-            <div class="col-md-6">
-          <p>Kabupaten Pati, yang dikenal sebagai "Kota Bumi Mina Tani", merupakan sebuah wilayah di Provinsi Jawa Tengah yang memiliki kekayaan alam, budaya, dan sejarah yang menarik.
-            Terletak di pantai utara Pulau Jawa, Kabupaten Pati memiliki posisi strategis yang menjadikannya sebagai salah satu daerah penting di Jawa Tengah, baik dari segi ekonomi,
-            pariwisata, maupun pertanian.</p>
-          </div>
-          <div class="col-md-6">
-              <div class="bg-light rounded" style="height: 300px;">
-                  <img src="img/tugu kota pati.jpg" alt="Deskripsi Image" class="img-fluid rounded" style="height: 150; width: 150;">
-              </div>
-          </div>
-          </div>
-        </div>
-      </section>
-      <!-- akhir section deskripsi -->
        
-      <!-- Section Daerah Rawan Banjir -->
-<section id="peta" class="my-5 bg-secondary text-white py-5">
-  <div class="container">
-      <!-- Header dengan ikon -->
-      <div class="row justify-content-center mb-4">
-          <div class="col text-center">
-              <div class="d-inline-block mb-3">
-                  <img src="img/ikon.jpg" alt="Icon" class="rounded-circle img-fluid" style="width: 60px; height: 60px; object-fit: cover;">
-              </div>
-              <h2 class="fw-bold">Daerah Rawan Banjir</h2>
-              <p class="text-white-50">Pelajari wilayah di Kota Pati yang rentan terhadap banjir</p>
-          </div>
-      </div>
-
-      <!-- Konten: Gambar dan Skala Banjir -->
-      <div class="row g-0 align-items-center">
-        <!-- Bagian Kiri: Gambar Peta -->
-        <div class="col-md-6">
-            <div class="bg-light p-3 h-100">
-                <img src="img/qgis nyoba.jpg" alt="Peta Daerah Rawan Banjir" class="img-fluid w-100 rounded">
+<!-- section deskripsi -->
+<section id="deskripsi">
+    <div class="container">
+        <h2 class="text-center">Deskripsi</h2>
+        <div class="row d-flex align-items-start">
+            <div class="col-md-6">
+                <p style="margin-bottom: 10px; text-align: left;">Kabupaten Pati, yang dikenal sebagai "Kota Bumi Mina Tani", merupakan sebuah wilayah di Provinsi Jawa Tengah yang memiliki kekayaan alam, budaya, dan sejarah yang menarik. Terletak di pantai utara Pulau Jawa, Kabupaten Pati memiliki posisi strategis yang menjadikannya sebagai salah satu daerah penting di Jawa Tengah, baik dari segi ekonomi, pariwisata, maupun pertanian.</p>
             </div>
-        </div>
-
-        <!-- Bagian Kanan: Skala Banjir -->
-        <div class="col-md-6">
-            <div class="bg-light p-4 h-100 d-flex align-items-center">
-                <div>
-                    <h5 class="fw-bold text-dark">Skala Banjir</h5>
-                    <ul class="list-unstyled text-dark">
-                        <li>• Flood Alert (Orange)</li>
-                        <li>• Flood Monitoring (Yellow)</li>
-                        <li>• Flood Warning (Red)</li>
-                        <li>• Severe Flood (Purple)</li>
-                    </ul>
-                </div>
+            <div class="col-md-6 d-flex justify-content-end" style="padding-top: 0; padding-bottom: 0;">
+                <img src="img/tugu kota pati.jpg" alt="Deskripsi Image" class="img-fluid rounded" style="max-height: 300px; margin-top: -40px; width: auto;">
             </div>
         </div>
     </div>
-</div>
+</section>
+<!-- akhir section deskripsi -->
+       
+      <!-- Section Peta Daerah Rawan Banjir -->
+<section id="peta" class="container-fluid facts py-50 pt-lg-100">
+  <div class="container py-5 pt-lg-0">
+    <div class="row justify-content-center mb-4">
+        <div class="col text-center">
+          <div class="d-inline-block mb-3">
+            <img src="img/business.png" alt="Icon" class="rounded-circle img-fluid" style="width: 60px; height: 60px; object-fit: cover;">
+          </div>
+          <h2 class="fw-bold text-light">Daerah Rawan Banjir</h2>
+          <p class="text-white-50">Pelajari wilayah di Kota Pati yang rentan terhadap banjir</p>
+        </div>
+      </div>
+      <div class="row gx-0 justify-content-center">
+        <div class="col-lg-8">
+            <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 350px;">
+                <div class="me-3" style="flex: 0 0 40%;">
+                    <img src="img/qgis nyoba.jpg" alt="Peta Daerah Rawan Banjir" class="img-fluid w-100 rounded">
+                </div>
+                <div class="bg-light d-flex align-items-center">
+                    <div>
+                        <h5 class="fw-bold text-dark">Skala Banjir</h5>
+                        <ul class="list-unstyled text-dark">
+                            <li>• Flood Alert (Orange)</li>
+                            <li>• Flood Monitoring (Yellow)</li>
+                            <li>• Flood Warning (Red)</li>
+                            <li>• Severe Flood (Purple)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
 </section>
 
 
          <!-- Team -->
-         <section id="about">
+         <section id="team" style="margin-top: 50px;">
           <div class="container text-center">
-              <div class="row mb-3">
+              <div class="row mb-4">
                   <div class="col">
                       <h2>Team</h2>
                   </div>
@@ -220,14 +210,6 @@
                   <!-- End -->
               </div>
           </div>
-  
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#ffffff"
-            fill-opacity="1"
-            d="M0,64L48,101.3C96,139,192,213,288,224C384,235,480,181,576,144C672,107,768,85,864,106.7C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg> -->
       </section>
       <!-- Akhir Team -->
 
