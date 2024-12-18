@@ -9,10 +9,10 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #030c59">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: #e2edff">
       <div class="container">
         <a class="navbar-brand" href="#home">
-          <img src="img/logo_pafloz_fix.png" alt="NYOBA SIG" height="80" />
+          <img src="img/logo.png" alt="NYOBA SIG" height="80" />
           SIG Pati Flood Zone
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,20 +29,43 @@
     </nav>
     <!-- Akhir Navbar -->
 
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <h1 class="display-4" style="font-size: 4rem; font-weight: bold;">Selamat Datang di PAFLOZ</h1>
+      <p class="lead">Tetap terupdate dengan informasi terkini seputar banjir di Kota Pati</p>
+    </section>
+      <!-- Akhir Jumbotron -->
+
+    <!-- info banjir kota pati -->
+    <section class="info">
+      <div class="description">
+          <h2>Informasi Banjir Kabupaten Pati</h2>
+          <p>Banjir yang terjadi di Kabupaten Pati disebabkan oleh curah hujan yang tinggi dan meluapnya sungai. 
+          Banyak wilayah yang terdampak, mengakibatkan kerugian material dan gangguan pada aktivitas 
+          masyarakat. Pemerintah setempat telah mengambil langkah-langkah untuk menangani situasi ini 
+          dan memberikan bantuan kepada korban banjir.</p>
+      </div>
+      <div class="image-container">
+          <img src="img/banjir-pati-1.jpg" alt="Gambar 1">
+          <img src="img/banjir-pati-2.jpg" alt="Gambar 2">
+          <img src="img/banjir-pati-3.jpg" alt="Gambar 3">
+      </div>
+  </section>
+
+  <!-- akhir info banjir -->
+
+  <!-- osm -->
     <section class="map-page">
       <div class="map-container">
-        <!-- Tempat Wisata Buttons -->
-        <div class="tourist-location-buttons">
-          <button onclick="flyToLocation(110.4145, -7.0051)">Sukolilo</button>
-          <button onclick="flyToLocation(110.4233, -6.9826)">Kayen</button>
-          <button onclick="flyToLocation(110.4054, -6.9753)">Tambakbromo</button>
-          <button onclick="flyToLocation(110.4049, -6.9876)">Winong</button>
-        </div>
-
-        <!-- Map Container -->
-        <div id="main-map"></div>
+          <!-- Tempat Wisata Buttons -->
+          <div class="tourist-location-buttons"></div>
+          <!-- Map Container -->
+          <div id="main-map" style="height: 600px;"></div>
       </div>
-    </section>
+  </section>
+</section>
+  <!-- akhir osm -->
+
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
