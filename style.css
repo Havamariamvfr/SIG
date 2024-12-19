@@ -230,3 +230,7 @@ section.info {
   height: 328px;
   object-fit: cover; /* Memastikan gambar di-crop dan tidak terdistorsi */
 }
+
+#grafik {
+  padding-top: 400px;
+}
